@@ -1,5 +1,7 @@
-
 const path = require('path')
-var ghpages = require('gh-pages')
-console.log(path.resolve(__dirname, '../build'))
-ghpages.publish(path.resolve(__dirname, '../build'), function (err) { })
+const ghpages = require('gh-pages')
+const distPath = path.resolve(__dirname, '../build')
+
+ghpages.publish(distPath, {force: true}, function (error) {
+  throw error
+})
