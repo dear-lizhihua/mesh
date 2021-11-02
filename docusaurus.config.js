@@ -8,13 +8,13 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula')
 const config = {
   title: '脉时云前端博客',
   tagline: 'Dinosaurs are cool',
-  url: 'https://dear-lizhihua.github.io/mesh/',
+  url: 'https://dear-lizhihua.github.io',
   baseUrl: '/mesh/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'dear-lizhihua', // Usually your GitHub org/user name.
+  projectName: 'mesh', // Usually your repo name.
 
   presets: [
     [
