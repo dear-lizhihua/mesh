@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="-56 295 910 229" width="910" height="229">
+  <defs>
+    <font-face font-family="PingFang SC" font-size="16" panose-1="2 11 8 0 0 0 0 0 0 0" units-per-em="1000" underline-position="-150" underline-thickness="80" slope="0" x-height="600" cap-height="860" ascent="1060.0021" descent="-340.0007" font-weight="600">
+      <font-face-src>
+        <font-face-name name="PingFangSC-Semibold"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="StickArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-7 -4 8 8" markerWidth="8" markerHeight="8" color="#666a6b">
+      <g>
+        <path d="M -5.76 0 L 0 0 M 0 2.16 L -5.76 0 L 0 -2.16" fill="none" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2021-11-05 06:43:47 +0000</metadata>
+  <g id="Canvas_1" stroke="none" fill-opacity="1" stroke-opacity="1" stroke-dasharray="none" fill="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_21">
+        <path d="M -45 389.25 L 84.5 389.25 C 89.47056 389.25 93.5 393.27944 93.5 398.25 L 93.5 420.25 C 93.5 425.22056 89.47056 429.25 84.5 429.25 L -45 429.25 C -49.97056 429.25 -54 425.22056 -54 420.25 L -54 398.25 C -54 393.27944 -49.97056 389.25 -45 389.25 Z" fill="white"/>
+        <path d="M -45 389.25 L 84.5 389.25 C 89.47056 389.25 93.5 393.27944 93.5 398.25 L 93.5 420.25 C 93.5 425.22056 89.47056 429.25 84.5 429.25 L -45 429.25 C -49.97056 429.25 -54 425.22056 -54 420.25 L -54 398.25 C -54 393.27944 -49.97056 389.25 -45 389.25 Z" stroke="#929292" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+        <text transform="translate(-49 398.25)" fill="black">
+          <tspan font-family="PingFang SC" font-size="16" font-weight="600" fill="black" x="15.438" y="17">Main 组装函数</tspan>
+        </text>
+      </g>
+      <g id="Graphic_18">
+        <path d="M 234 297 L 508.5 297 C 513.47056 297 517.5 301.02944 517.5 306 L 517.5 328 C 517.5 332.97056 513.47056 337 508.5 337 L 234 337 C 229.02944 337 225 332.97056 225 328 L 225 306 C 225 301.02944 229.02944 297 234 297 Z" fill="white"/>
+        <path d="M 234 297 L 508.5 297 C 513.47056 297 517.5 301.02944 517.5 306 L 517.5 328 C 517.5 332.97056 513.47056 337 508.5 337 L 234 337 C 229.02944 337 225 332.97056 225 328 L 225 306 C 225 301.02944 229.02944 297 234 297 Z" stroke="#929292" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+        <text transform="translate(230 306)" fill="black">
+          <tspan font-family="PingFang SC" font-size="16" font-weight="600" fill="black" x="45.018" y="17">批量读取目录下所有 JSON </tspan>
+        </text>
+      </g>
+      <g id="Line_17">
+        <title>Transition</title>
+        <line x1="212.86766" y1="325.5111" x2="93.5" y2="409.25" marker-start="url(#StickArrow_Marker)" stroke="#666a6b" stroke-linecap="square" stroke-linejoin="bevel" stroke-width="2"/>
+      </g>
+      <g id="Graphic_16">
+        <path d="M 234 389.25 L 508.5 389.25 C 513.47056 389.25 517.5 393.27944 517.5 398.25 L 517.5 420.25 C 517.5 425.22056 513.47056 429.25 508.5 429.25 L 234 429.25 C 229.02944 429.25 225 425.22056 225 420.25 L 225 398.25 C 225 393.27944 229.02944 389.25 234 389.25 Z" fill="white"/>
+        <path d="M 234 389.25 L 508.5 389.25 C 513.47056 389.25 517.5 393.27944 517.5 398.25 L 517.5 420.25 C 517.5 425.22056 513.47056 429.25 508.5 429.25 L 234 429.25 C 229.02944 429.25 225 425.22056 225 420.25 L 225 398.25 C 225 393.27944 229.02944 389.25 234 389.25 Z" stroke="#929292" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+        <text transform="translate(230 398.25)" fill="black">
+          <tspan font-family="PingFang SC" font-size="16" font-weight="600" fill="black" x="10.354" y="17">遍历路径数组，单个 JSON 文件转换</tspan>
+        </text>
+      </g>
+      <g id="Line_15">
+        <title>Transition</title>
+        <line x1="371.25" y1="372.93" x2="371.25" y2="338.5" marker-start="url(#StickArrow_Marker)" stroke="#666a6b" stroke-linecap="square" stroke-linejoin="bevel" stroke-width="2"/>
+      </g>
+      <g id="Graphic_14">
+        <path d="M 651.5 297 L 843 297 C 847.9706 297 852 301.02944 852 306 L 852 328 C 852 332.97056 847.9706 337 843 337 L 651.5 337 C 646.5294 337 642.5 332.97056 642.5 328 L 642.5 306 C 642.5 301.02944 646.5294 297 651.5 297 Z" fill="white"/>
+        <path d="M 651.5 297 L 843 297 C 847.9706 297 852 301.02944 852 306 L 852 328 C 852 332.97056 847.9706 337 843 337 L 651.5 337 C 646.5294 337 642.5 332.97056 642.5 328 L 642.5 306 C 642.5 301.02944 646.5294 297 651.5 297 Z" stroke="#929292" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+        <text transform="translate(647.5 306)" fill="black">
+          <tspan font-family="PingFang SC" font-size="16" font-weight="600" fill="black" x="44.366" y="17">读取 .json 文件</tspan>
+        </text>
+      </g>
+      <g id="Line_13">
+        <title>Transition</title>
+        <line x1="630.5757" y1="325.80016" x2="517.5" y2="409.25" marker-start="url(#StickArrow_Marker)" stroke="#666a6b" stroke-linecap="square" stroke-linejoin="bevel" stroke-width="2"/>
+      </g>
+      <g id="Graphic_12">
+        <path d="M 651.5 420 L 843 420 C 847.9706 420 852 424.02944 852 429 L 852 451 C 852 455.97056 847.9706 460 843 460 L 651.5 460 C 646.5294 460 642.5 455.97056 642.5 451 L 642.5 429 C 642.5 424.02944 646.5294 420 651.5 420 Z" fill="white"/>
+        <path d="M 651.5 420 L 843 420 C 847.9706 420 852 424.02944 852 429 L 852 451 C 852 455.97056 847.9706 460 843 460 L 651.5 460 C 646.5294 460 642.5 455.97056 642.5 451 L 642.5 429 C 642.5 424.02944 646.5294 420 651.5 420 Z" stroke="#929292" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+        <text transform="translate(647.5 418)" fill="black">
+          <tspan font-family="PingFang SC" font-size="16" font-weight="600" fill="black" x="1.094" y="17">.json 扩展名称替换为 .js 扩</tspan>
+          <tspan font-family="PingFang SC" font-size="16" font-weight="600" fill="black" x="75.75" y="39">展名称</tspan>
+        </text>
+      </g>
+      <g id="Line_11">
+        <title>Transition</title>
+        <line x1="628.10905" y1="382.04017" x2="517.5" y2="409.25" marker-start="url(#StickArrow_Marker)" stroke="#666a6b" stroke-linecap="square" stroke-linejoin="bevel" stroke-width="2"/>
+      </g>
+      <g id="Graphic_10">
+        <path d="M 651.5 358.5 L 843 358.5 C 847.9706 358.5 852 362.52944 852 367.5 L 852 389.5 C 852 394.47056 847.9706 398.5 843 398.5 L 651.5 398.5 C 646.5294 398.5 642.5 394.47056 642.5 389.5 L 642.5 367.5 C 642.5 362.52944 646.5294 358.5 651.5 358.5 Z" fill="white"/>
+        <path d="M 651.5 358.5 L 843 358.5 C 847.9706 358.5 852 362.52944 852 367.5 L 852 389.5 C 852 394.47056 847.9706 398.5 843 398.5 L 651.5 398.5 C 646.5294 398.5 642.5 394.47056 642.5 389.5 L 642.5 367.5 C 642.5 362.52944 646.5294 358.5 651.5 358.5 Z" stroke="#929292" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+        <text transform="translate(647.5 367.5)" fill="black">
+          <tspan font-family="PingFang SC" font-size="16" font-weight="600" fill="black" x="10.694" y="17">JSON 转为 class 字符串</tspan>
+        </text>
+      </g>
+      <g id="Graphic_9">
+        <path d="M 651.5 481.5 L 843 481.5 C 847.9706 481.5 852 485.52944 852 490.5 L 852 512.5 C 852 517.47056 847.9706 521.5 843 521.5 L 651.5 521.5 C 646.5294 521.5 642.5 517.47056 642.5 512.5 L 642.5 490.5 C 642.5 485.52944 646.5294 481.5 651.5 481.5 Z" fill="white"/>
+        <path d="M 651.5 481.5 L 843 481.5 C 847.9706 481.5 852 485.52944 852 490.5 L 852 512.5 C 852 517.47056 847.9706 521.5 843 521.5 L 651.5 521.5 C 646.5294 521.5 642.5 517.47056 642.5 512.5 L 642.5 490.5 C 642.5 485.52944 646.5294 481.5 651.5 481.5 Z" stroke="#929292" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+        <text transform="translate(647.5 479.5)" fill="black">
+          <tspan font-family="PingFang SC" font-size="16" font-weight="600" fill="black" x="3.75" y="17">存放在相同目录结构的路径</tspan>
+          <tspan font-family="PingFang SC" font-size="16" font-weight="600" fill="black" x="59.75" y="39">下写入文件</tspan>
+        </text>
+      </g>
+      <g id="Line_8">
+        <title>Transition</title>
+        <line x1="628.10905" y1="436.4598" x2="517.5" y2="409.25" marker-start="url(#StickArrow_Marker)" stroke="#666a6b" stroke-linecap="square" stroke-linejoin="bevel" stroke-width="2"/>
+      </g>
+      <g id="Line_7">
+        <title>Transition</title>
+        <line x1="630.5757" y1="492.69984" x2="517.5" y2="409.25" marker-start="url(#StickArrow_Marker)" stroke="#666a6b" stroke-linecap="square" stroke-linejoin="bevel" stroke-width="2"/>
+      </g>
+    </g>
+  </g>
+</svg>
