@@ -5,6 +5,7 @@ sidebar_position: 200
 # @mesh/cli
 
 ## 整体目标
+
 一个命令行工具，辅助开发
 
 ## 参考
@@ -215,4 +216,12 @@ $ mesh env create gitignore
 $ mesh env create jsconfig
 $ mesh env create prettierrc
 $ mesh env create editorconfig
+```
+
+## mesh api
+
+接口转换为调用代码
+
+```shell
+$ mesh api generate --src=<source directory> --dist=<dist directory>
 ```
