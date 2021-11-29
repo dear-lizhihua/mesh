@@ -29,7 +29,7 @@ const chart = new Chart({
   container: 'container',
   autoFit: true,
   height: 500,
-  padding: [50, 20, 50, 20],
+  padding: [50],
 })
 chart.data(data)
 chart.scale('value', {
@@ -41,7 +41,7 @@ chart.axis('type', {
     alignTick: false,
   },
 })
-chart.axis('value', false)
+// chart.axis('value', false)
 
 chart.tooltip({
   showMarkers: false,
