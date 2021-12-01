@@ -1,3 +1,7 @@
+---
+sidebar_position: 121
+---
+
 # 验证 SPA 构建结果
 
 ## 安装 [serve](https://www.npmjs.com/package/serve)

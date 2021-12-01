@@ -1,3 +1,7 @@
+---
+sidebar_position: 131
+---
+
 # 使用 vite-node 运行 CommonJS 和 ES Modules 模块
 
 > vite-node 将 Vite 作为 Node.js 运行时。
