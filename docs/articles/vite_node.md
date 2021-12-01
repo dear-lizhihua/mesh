@@ -84,7 +84,7 @@ $ ./node_modules/.bin/vite-node src/index.js
 server start at http://localhost:8500
 ```
 
-## vite-node + execa@6 (ES modules 模块)
+## 使用 vite-node + execa@6 (ES modules 模块)
 
 ### 执行不存在的命令，捕获错误
 
