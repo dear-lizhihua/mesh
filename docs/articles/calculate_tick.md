@@ -49,11 +49,11 @@ console.log('calculateTick(10000, 0): ', calculateTick(10000, 0)) // 10000
 ### 小于 1 的情况
 
 ```javascript
-console.log('calculateTick(0.9, 0): ', calculateTick(0.9, 0)) // 100000
-console.log('calculateTick(0.7, 0): ', calculateTick(0.7, 0)) // 100000
-console.log('calculateTick(0.5, 0): ', calculateTick(0.5, 0)) // 50000
-console.log('calculateTick(0.2, 0): ', calculateTick(0.2, 0)) // 20000
-console.log('calculateTick(0.1, 0): ', calculateTick(0.1, 0)) // 10000
+console.log('calculateTick(0.9, 0): ', calculateTick(0.9, 0)) // 1
+console.log('calculateTick(0.7, 0): ', calculateTick(0.7, 0)) // 1
+console.log('calculateTick(0.5, 0): ', calculateTick(0.5, 0)) // 0.5
+console.log('calculateTick(0.2, 0): ', calculateTick(0.2, 0)) // 0.2
+console.log('calculateTick(0.1, 0): ', calculateTick(0.1, 0)) // 0.1
 ```
 
 ### 下界小于 0 的情况
