@@ -1,3 +1,7 @@
+---
+sidebar_position: 114
+---
+
 # 通过 Math.log10() 函数，计算图表网格的 y 轴刻度线
 
 ## 什么是 Math.log10() 函数？
