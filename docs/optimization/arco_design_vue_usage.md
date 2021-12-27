@@ -42,7 +42,7 @@ import Usage2Url from '@site/static/img/optimization/arco_design_vue/arco_design
 个人认为应该划分出
 
 - 基础组件，例如 Tree, Tag 组件是通用的组件，样式跟随原先的组件库。
-- 定制基础组件，例如 Tree, TreeSelect, Menu 组件，这些都是需要根据业务需求进行扩展的组件，交互和样式自己扩展。
+- 定制基础组件，例如 TreeSelect 组件，这些都是需要根据业务需求进行扩展的组件，交互和样式自己扩展。
 
 因此，我们只需要理解 TreeSelect 逻辑，在基础组件的基础上进行二次封装，这样对于 TreeSelect 自身的交互和样式是可控的。
 
