@@ -2,11 +2,13 @@
 sidebar_position: 101
 ---
 
+import TreeSelectUrl from '@site/static/img/optimization/arco_design_vue/tree_select.png';
+
 # arco-design-vue 和 ant-design-vue 用例调研：使用 TreeSelect 组件
 
 ## MeshCloud 业务需求
 
-<img src="/img/optimization/arco_design_vue/tree_select.png" width="240px" />
+<img width="240px" src={TreeSelectUrl} />
 
 一个 TreeSelect 组件
 
