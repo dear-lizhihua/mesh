@@ -101,6 +101,49 @@ export default function useTreeData (props) {
 
 ## tree-select/hooks/use-selected-state.js
 
+正常化 modelValue 和 defaultValue 的值。细节描述如下：
+
+- 将 undefined 转为 undefined。
+- 多选或勾选情况下，将 `非数组结构的值` 转为 `数组结构的值`。
+- 单选情况下，将 `数组结构的多个值` 转为 `数组结构的单个值`。
+
+```javascript
+export default function useSelectedState (props) {
+  function normalizeValue (value) {
+    if (isUndefined(value)) return undefined
+    if (multiple?.value || treeCheckable?.value)
+      return !isArray(value) ? [value] : value
+    return isArray(value) ? value.slice(0, 1) : [value]
+  }
+  watchEffect(() => {
+    const normalizeModelValue = normalizeValue(modelValue.value)
+  })
+  const normalizeDefaultValue = normalizeValue(defaultValue.value)
+}
+```
+
+获取数组中的 keys。细节描述如下：
+
+- 遍历数组。item 如果是对象取 item.value，item 如果不是对象取 item。
+- 过滤数组。item 是 undefined 或 ''。
+
+```javascript
+const opt = Object.prototype.toString
+const isObject = (obj) => opt.call(obj) === '[object Object]'
+const isUndefined = (obj) => obj === undefined
+export default function useSelectedState (props) {
+  function getKeys (value) {
+    if (!value) return undefined
+    const keys = value.map((item) => (isObject(item) ? item.value : item)).filter((item) => !isUndefined(item) && item !== '')
+    return keys
+  }
+  watchEffect(() => {
+    const modelValueKeys = getKeys(normalizeModelValue)
+  })
+  const defaultKeys = getKeys(normalizeDefaultValue)
+}
+```
+
 ## tree/utils/index.js
 
 getFlattenTreeData 函数：使用 `深度优先` 遍历 `树结构`。
