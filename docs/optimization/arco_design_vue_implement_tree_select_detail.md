@@ -292,6 +292,25 @@ export function generateTreeData (treeData, treeProps) {
 }
 ```
 
+## _components/select-view/select-view.jsx
+
+- 将 multiple 多选，但 modelValue 是 Object 的转为 Array 值
+- 将 multiple 单选，但 modelValue 是 Array 的转为 Object 值
+
+```javascript
+const validValue = computed(() => {
+  // transform to array
+  if (props.multiple && !isArray(props.modelValue)) {
+    return props.modelValue ? [props.modelValue] : []
+  }
+  // transform to object
+  if (!props.multiple && isArray(props.modelValue)) {
+    return props.modelValue[0]
+  }
+  return props.modelValue
+})
+```
+
 ## render() 引用 setup()
 
 ### render() 引用 this.render()
