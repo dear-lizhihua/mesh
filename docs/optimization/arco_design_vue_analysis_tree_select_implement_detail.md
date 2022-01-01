@@ -1,8 +1,8 @@
 ---
-sidebar_position: 111
+sidebar_position: 104
 ---
 
-# arco-design-vue 实现一个 TreeSelect 组件，一些细节
+# arco-design-vue 分析 TreeSelect 组件的实现细节
 
 ## _hooks/use-state.js
 
@@ -311,6 +311,90 @@ const validValue = computed(() => {
 })
 ```
 
+## components/input-tag/input-tag.tsx
+
+## [CompositionEvent(复合事件)](https://developer.mozilla.org/en-US/docs/Web/API/CompositionEvent)
+
+```javascript
+export default defineComponent({
+  setup (props, {emit}) {
+    const handleComposition = (e) => {
+      const { value } = e.target
+      console.log(e.type, `'${e.data}'`)
+    }
+    return {handleComposition}
+  },
+  render () {
+    return (
+      <input
+        onCompositionstart={this.handleComposition}
+        onCompositionupdate={this.handleComposition}
+        onCompositionend={this.handleComposition}
+      />
+    )
+  },
+})
+```
+
+打开 macOS 自带中文输入法，输入 dd，触发 composition 事件：
+
+```text
+compositionstart ''
+compositionupdate 'd'
+compositionupdate 'd d'
+compositionupdate '得到'
+compositionend '得到'
+```
+
+### 处理中文输入
+
+中文输入会触发 CompositionEvent。所以
+
+- 未完成输入时，不应该修改 input.value。
+- 完成输入时，
+
+注意：
+
+- handleComposition 函数：通过修改 isComposition，来标记是否处于复合事件。
+- handleInput 函数：通过判断 isComposition，来决定是否修改 input.value。
+
+```javascript
+export default defineComponent({
+  setup(props, { emit, slots, attrs }) {
+    const isComposition = ref(false)
+    const handleComposition = (e) => {
+      const { value } = e.target
+      if (e.type === 'compositionend') {
+        isComposition.value = false
+        compositionValue.value = ''
+        emit('inputValueChange', value, e)
+        updateInputValue(value)
+      } else {
+        isComposition.value = true
+        compositionValue.value = computedInputValue.value + (e.data ?? '')
+      }
+    }
+    const handleInput = (e) => {
+      const { value } = e.target
+      if (!isComposition.value) {
+        emit('inputValueChange', value, e)
+        updateInputValue(value)
+      }
+    }
+  },
+  render () {
+    return (
+      <input
+        onInput={this.handleInput}
+        onCompositionstart={this.handleComposition}
+        onCompositionupdate={this.handleComposition}
+        onCompositionend={this.handleComposition}
+      />
+    )
+  },
+})
+```
+
 ## render() 引用 setup()
 
 ### render() 引用 this.render()
@@ -381,7 +465,7 @@ export default defineComponent({
         onCheck={this.onCheck}
         v-slots={this.treeSlots}
       />
-    );
+    )
   },
 })
 ```

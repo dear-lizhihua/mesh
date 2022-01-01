@@ -1,5 +1,5 @@
 ---
-sidebar_position: 104
+sidebar_position: 105
 ---
 
 # arco-design-vue 分析 ResizeObserver 组件
