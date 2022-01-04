@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmesh=self.webpackChunkmesh||[]).push([[9747],{5641:function(s){s.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"MDX Blog Post","permalink":"/mesh/blog/mdx-blog-post"},{"title":"Long Blog Post","permalink":"/mesh/blog/long-blog-post"},{"title":"First Blog Post","permalink":"/mesh/blog/first-blog-post"}]}')}}]);
